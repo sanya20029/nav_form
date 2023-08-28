@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="device-width", initial-scale="1.0"/>
+        <title>Registration and Login form</title>
+        <link rel="stylesheet" href="styles.css"/>  
+    </head>
+    <body>
+        <div id="h1"><h1>Navigation and Forms</h1></div>
+        <div id="menu"><h3><u>Navigation Menus makes:</u></h3>
+        <p><b><i>User Experience</i></b> easier, more productive, easily accessible.
+        It helps user to easily Navigate throughout the web page.<br>  
+        It helps create well organized menus and provides access to desired information.</p>
+        <p><b><i>Accessibility</i></b> easy as it provides a structured way for users to interact with a website's content.</p>
+        <p><b><i>Engagement</i></b> of a website more as user can easily explore the page.</p>
+        <p><b><i>Hierarchy of information</i></b> organized and systematic.</p><br></div>
+
+        <div id="structure"><h3><u>Navigation Structures:</h3></u></h3>
+        <p><b>1.Vertical navigation menus:</b>  A vertical menu is typically placed on the side of the page and is suitable for 
+        websites with a lot of sections or features.<br>
+        <u>Use case:</u> Admin panels and dashboards often use vertical sidebar navigation to provide quick access to various 
+        tools, settings, and sections.</p> 
+
+        <p><b>1.Horizontal navigation menus:</b> These menus are used for quick access in a web site.
+        This navigation style places menu options horizontally across the top of the webpage.<br>
+        <u>Use case:</u> News websites often use horizontal top navigation to categorize articles by topics such as 
+        "Politics," "Business," "Sports," etc.</p>
+
+        <p><b>1.Dropdown menus:</b> Dropdown menus contains more structured information or data. 
+        These are easier for navigation throughout the website.<br>
+        Dropdown menus display sub-options when users hover or click on a main menu item.<br>
+        <u>Use case:</u>E-commerce websites use dropdown menus to categorize products by departments, 
+        such as "Electronics," "Clothing," and "Home Goods."</p>
+         
+         
+        <p><b>1.Footer menus:</b> The footer of a website often contains secondary navigation options or links to important pages.<br>
+        <u>Use case:</u> Footer navigation provides a convenient way for users to access essential pages like
+        "Terms of Use," "Privacy Policy," and "Contact."</p><br></div>
+          
+        <div id="nav"><h3><u>Purpose of nav element in HTML5:</u></h3>
+        <p>Nav element in HTML5 is used to define navigation links. 
+        Not all the links on a page are intended to be in nav element it only consists of major navigation blocks. 
+        It provides semantic structure to the websites.<br>
+        -The nav element wraps around the ul tag which stands for unordered list and contains the list item.<br>
+        -The anchor tag has href attribute which has the urls of the corresponding pages.</p></div>
+            
+        <div id="nav_menu"><h1>Navigation Menu:</h1></div>
+        <nav> 
+            <ul>
+                <li>
+                   <a class="nav_items" href="Home">Home</a> 
+                   <a class="nav_items" href="#About">About</a>
+                   <a class="nav_items" href="#Events">Events</a>
+                   <a class="nav_items" href="#Contact">Contact</a>
+                   <button class="nav_items" type="submit">Register</button> 
+                   <button class="nav_items" type="submit">Login</button> 
+                </li>
+            </ul>
+        </nav>
+
+
+        <div id="form"><h2><u>Creating a HTML form using <i>form</i> element:</u></h2></div>
+                                             
+        <div class="main"> 
+            <form>
+              <h2>Registration Form</h2>
+              <label for="fname">First name:</label><br>
+              <input class="text" type="text" id="fname" name="fname" value="" placeholder="First name"><br><br>
+              <label for="lname">Last name:</label><br>
+              <input class="text" type="text" id="lname" name="lname" value="" placeholder="Last name"><br><br>
+              <label for="gender">Gender:</label><br>
+              <input type="radio" id="male" value="Male" name="gender">
+              <label for="male">Male</label><br>
+              <input type="radio" id="female" value="Female" name="gender">
+              <label for="female">Female</label><br><br>
+              <label for="email">Email:</label><br>
+              <input class="text" type="text" id="email" name="email" value="" placeholder="Email"><br><br>
+              <label for="number">Mobile no.:</label><br>
+              <input class="text" type="text" id="number" name="number" value="" placeholder="Number"><br><br>
+              <label for="username">Username:</label><br>
+              <input class="text" type="text" id="username" name="username" value="" placeholder="Enter Username"><br><br>
+              <label for="password">Password:</label><br>
+              <input class="text" type="text" id="password" name="password" value="" placeholder="Enter password"><br><br>
+              <input type="submit" value="Submit">
+            </form> 
+        </div>
+          
+        <div class="login">
+            <form>
+                <h2>Login</h2>
+                <label for="username">Username:</label><br>
+                <input class="text" type="text" id="username" placeholder="Enter Username" value=""><br><br>
+                <label for="Password">Password:</label><br>
+                <input class="text" type="text" id="password" placeholder="Enter Password" value=""><br><br>
+                <input type="submit" value="Login">
+            </form>
+
+        </div>
+        <div id="attribute"> 
+        <h3><u>Essential Attribute for Form Submission:</u></h3>
+        <p><b>1. action:</b> Specifies the URL where the form data will be sent for processing.</p>  
+        <p><b>2. method:</b> Determines how the form data will be sent.</p>  
+        <p><b>3. name:</b> Identifies the form element.</p>  
+        <p><b>4. id:</b> Provides a unique identifier for the form element. It's useful for styling and scripting purposes.</p> 
+        <p><b>5. type:</b> Specifies the type of form element, such as text, password, radio, checkbox, etc.</p>  
+        <p>When the user fills out the form and clicks the "Submit" button, the form data is sent to the URL 
+        specified in the action attribute using the HTTP method specified in the method attribute. 
+        The server-side script at the specified URL can then process the form data and respond accordingly.</p>
+        </div>
+    </body>
+</html>
